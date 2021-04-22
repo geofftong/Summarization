@@ -1,0 +1,11 @@
+{
+  "model_path": "model/pb_model/1572594736",
+  "vocab_path": "model/vocab.txt",
+  "max_turn": 5,
+  "max_seq_length": 504,
+  "doc_stride": 256,
+  "max_query_length": 128,
+  "do_lower_case": true,
+  "classify_bin": "model/test_fasttext",
+  "classify_model": "model/model.bin"
+}
