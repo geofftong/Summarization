@@ -8,7 +8,7 @@ import json
 import requests
 import time
 
-URL = "http://9.141.138.122/news-abstraction"
+URL = "http://x.x.x.x/news-abstraction"
 
 
 def test():

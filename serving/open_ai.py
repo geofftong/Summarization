@@ -15,7 +15,7 @@ URL = "https://openai.weixin.qq.com/openapi/nlp/news-abstraction/{TOKEN}"
 
 def test():
     input_data = {
-        "uid": "xjlsj33lasfaf",  # 能标识用户的唯一用户id，可以是openid
+        "uid": "yourid",  # 能标识用户的唯一用户id，可以是openid
         "data": {
             "q": "恭喜小张脱单成功",
             "mode": "3class"}
@@ -23,7 +23,7 @@ def test():
 
     # 调用jwt库,生成json web token
     jwt_token = jwt.encode(EncodingAESKey,  # payload, 有效载体
-                           "zhananbudanchou9527269",  # 进行加密签名的密钥
+                           "yourkey",  # 进行加密签名的密钥
                            algorithm="HS256",  # 指明签名算法方式, 默认也是HS256
                            headers=headers  # json web token 数据结构包含两部分, payload(有效载体), headers(标头)
                            ).decode('ascii')  # python3 编码后得到 bytes, 再进行解码(指明解码的格式), 得到一个str
